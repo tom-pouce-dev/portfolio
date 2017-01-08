@@ -92,7 +92,9 @@ $xs-font-size: 0.8rem;
 
 html,
 p,
-a {
+a,
+input,
+textarea {
     font-family: "Din-Regular";
 }
 
@@ -306,16 +308,16 @@ ul {
     margin-top: 2rem;
     border: solid 1px #DBDBDB;
     .slidesjs-container {
-//        height: auto !important;
-//        position: inherit;
+        //        height: auto !important;
+        //        position: inherit;
         .slidesjs-control {
-//            height: 100% !important;
-//            position: inherit;
+            //            height: 100% !important;
+            //            position: inherit;
             .slidesjs-slide {
                 margin-top: 0px;
                 display: block;
                 height: auto !important;
-//                position: relative!important;
+                //                position: relative!important;
             }
         }
     }
@@ -346,11 +348,13 @@ ul {
     list-style: none;
     display: none;
 }
+
 //
 .slidesjs-pagination li {
     float: left;
     margin: 0 1px;
 }
+
 //
 .slidesjs-pagination li a {
     display: block;
@@ -362,6 +366,7 @@ ul {
     float: left;
     overflow: hidden;
 }
+
 //
 .slidesjs-pagination li a.active,
 .slidesjs-pagination li a:hover.active {
@@ -543,28 +548,53 @@ img {
 
 /* ----------------------------- CONTACT ----------------------------*/
 
+.success {
+    background-color: #30c299;
+    padding: 1em 0;
+    margin: 0 auto !important;
+    h4 {
+        font-size: 1em;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+.failed {
+    background-color: aliceblue;
+    padding: 1em 0;
+    margin: 0 auto !important;
+    color: red;
+}
+
 .wrapper-form {
     margin: auto;
     position: relative;
-    top: 20VH;
+    top: 30VH;
     .form {
-        background: #fff;
-        p {
-            text-align: center;
-            a {
-                color: #666;
+        border: 2px solid #FFF;
+        h3 {
+            color: #FFF;
+        }
+        .champ {
+            margin-bottom: 1em;
+            input,
+            textarea {
+                padding: 1em 3em;
+                border: 1px solid white;
+                background: white;
             }
         }
     }
 }
 
 input[type="submit"] {
-    padding: 1em;
-    color: white;
-    margin-top: 2em;
+    margin-bottom: 1em;
     font-size: 17px;
-    background: #ee6557;
-    border: none;
+    background: none;
+    border: 2px solid #FFF;
+    padding: 8px 40px;
+    display: inline-block;
+    color: #FFF;
 }
 
 input[type="submit"]:hover,
@@ -573,16 +603,11 @@ input[type="submit"]:focus {
     background: #0a535b;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-}
-
-.form input {
-    margin-bottom: 1em;
-}
-
+//input[type="text"],
+//input[type="email"],
+//textarea {
+//    width: auto;
+//}
 .hp {
     display: none;
 }

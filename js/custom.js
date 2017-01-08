@@ -35,7 +35,6 @@ $(function(){
     });
 
 
-
 // navigation menu
 
 //on click, affiche la barre de navigation
@@ -59,3 +58,9 @@ $(function(){
     if (wscreen < 640){
         $("nav").addClass("nogutters");
     }
+
+function checkRobot() { //checkspam
+	if($("form").hasClass('contact')) {
+		$('<input type="checkbox" name="nobot" required> <label>Je confirme ne pas être un robot</label>').prependTo($('#cap'));
+	}
+}
