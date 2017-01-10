@@ -1,42 +1,47 @@
-<!DOCTYPE html>
-<html lang="fr">
+ <?php
+session_start();
+require("decide-lang.php");
+$_SESSION = $lang;
+?>
+ 
 
-<head>
-    <title>Thomas portfolio</title>
-    <?php 
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <?php 
     	include('include/head.php');
     ?>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <!--Header-->
-    <?php 
+        <!--Header-->
+        <?php 
 		include('include/header.php');
 	?>
-        <!-- Fin Header-->
+            <!-- Fin Header-->
 
-        <!--Div infos-->
-        <main id="home">
-            <div class="wrapper-info">
-                <section class="container gutters">
-                    <div class="xl-col-12">
-                        <div class="info">
-                            <h1>Thomas Werkmeister</h1>
-                            <h1>Graphiste print et web</h1>
+            <!--Div infos-->
+            <main id="home">
+                <div class="wrapper-info">
+                    <section class="container gutters">
+                        <div class="xl-col-12">
+                            <div class="info">
+                                <h1>Thomas Werkmeister</h1>
+                                <h1><?php echo $lang['title']; ?></h1>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Fin Div infos-->
-                </section>
-            </div>
-        </main>
-        <!--
+                        <!-- Fin Div infos-->
+                    </section>
+                </div>
+            </main>
+            <!--
         <footer class="wrapper">
             <div class="container gutters footer-in"> Nouveau site en développement pour mi-novembre 2016.</div>
         </footer>
 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="js/custom.js"></script>
-</body>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="js/custom.js"></script>
+    </body>
 
-</html>
+    </html>

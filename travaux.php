@@ -1,3 +1,9 @@
+<?php
+session_start();
+require("decide-lang.php");
+$_SESSION = $lang;
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
