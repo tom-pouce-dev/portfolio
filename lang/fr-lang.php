@@ -16,7 +16,14 @@ $lang = array(
 'message' => 'Votre message',
 'robot' => 'Si vous êtes un humain, laissez ce champ vide',
 'submit' => 'Envoyer',
- 
+    
+//travaux
+    
+//cogedim
+
+    
+    
+    
 );
  
 ?>

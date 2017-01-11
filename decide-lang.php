@@ -26,5 +26,4 @@ if (!empty($_GET['lang'])) {
 // //enregistrement du cookie au nom de lang
 // setcookie('lang', $lang, time() + $expire); 
 
- ?> 
  

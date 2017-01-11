@@ -3,17 +3,17 @@
 $lang = array(
  //navigation menu
 'work' => 'Arbeit',
-'contact' => 'Kontat',
+'contact' => 'Kontakt',
 
 //index    
 'title' => 'Wilkommen',
 
 //contact
-'write' => 'Contact me',
-'name' => 'Name and last name',
+'write' => 'Kontakt',
+'name' => 'Name und Vorname',
 'mail' => 'Email',
-'subject' => 'Subject',
-'message' => 'Your message',
+'subject' => 'Thema',
+'message' => 'Ihre Nachricht',
 'robot' => 'If you are a humain, let it go.',
 'submit' => 'Submit.',
 
