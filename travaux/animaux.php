@@ -1,3 +1,13 @@
+ <?php
+session_start();
+if(isset($_GET['lang']))
+  $_SESSION['lang'] = $_GET['lang']; //GET value from chosen lang
+
+if(!isset($_SESSION['lang']))
+  $_SESSION['lang'] = 'fr'; //default case
+
+require_once '../lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamically
+?>
 <!DOCTYPE html>
 <html lang="fr">
 

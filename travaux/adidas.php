@@ -1,3 +1,13 @@
+ <?php
+session_start();
+if(isset($_GET['lang']))
+  $_SESSION['lang'] = $_GET['lang']; //GET value from chosen lang
+
+if(!isset($_SESSION['lang']))
+  $_SESSION['lang'] = 'fr'; //default case
+
+require_once '../lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamically
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,8 +29,8 @@
         <main>
             <section class="container gutters fond">
                 <div class="xl-col-12">
-                    <h3>Adidas</h3>
-                    <p>Réalisation d'un livret sur l'histoire d'Adidas.</p>
+                    <h3><?php echo $lang['adidas']; ?></h3>
+                    <p><?php echo $lang['texteAdidas']; ?></p>
                     <!--         SLIDER   -->
                     <div class="xl-col-12">
                         <div id="slides">

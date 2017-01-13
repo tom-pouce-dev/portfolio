@@ -6,17 +6,27 @@
     <div class="navbarElements" id="navbarElements">
         <ul class="navbarListe">
             <!--            <li><a href="default.asp" class="navbarLinks">Accueil</a></li>-->
-            <li><a href="travaux.php" class="navbarLinks"><?php echo $lang['work']; ?></a></li>
-            <li><a href="contact.php" class="navbarLinks"><?php echo $lang['contact']; ?></a></li>
+            <li>
+                <a href="travaux.php" class="navbarLinks">
+                    <?php echo $lang['work']; ?>
+                </a>
+            </li>
+            <li>
+                <a href="contact.php" class="navbarLinks">
+                    <?php echo $lang['contact']; ?>
+                </a>
+            </li>
             <li><a href="Book-Thomas-Werkmeister-2016.pdf" target="_blank" class="navbarLinks">Book</a></li>
         </ul>
         <ul class="navbarFlags">
-            <li class="flag" id="fr">
-                <a href="?lang=fr" value="fr">fr</a></li>
-            <li class="flag" id="en">
-                <a href="?lang=en" value="en">en</a></li>
-            <li class="flag" id="de">
-                <a href="?lang=de" value="de">de</a></li>
+            <li id="fr">
+                <a class="flag" href="?lang=fr" value="fr">FR</a></li>
+<!--
+            <li id="en">
+                <a class="flag" href="?lang=en" value="en">EN</a></li>
+-->
+            <li id="de">
+                <a class="flag" href="?lang=de" value="de">DE</a></li>
         </ul>
         <ul class="resume">
             <li class="resume-fr"><a href="CV-Thomas-Werkmeister.pdf" target="_blank">mon CV</a></li>

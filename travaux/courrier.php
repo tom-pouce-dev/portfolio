@@ -1,3 +1,13 @@
+ <?php
+session_start();
+if(isset($_GET['lang']))
+  $_SESSION['lang'] = $_GET['lang']; //GET value from chosen lang
+
+if(!isset($_SESSION['lang']))
+  $_SESSION['lang'] = 'fr'; //default case
+
+require_once '../lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamically
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -20,8 +30,8 @@
         <main>
             <section class="container gutters fond">
                 <div class="xl-col-12">
-                    <h3>Courrier international jeunesse</h3>
-                    <p>Réalisation d'une version jeune du journal Courrier International où j'ai effectué un stage en tant que maquettiste. Ce projet a été élaboré dans le cadre de mon projet professionnel lors de ma seconde année de BTS Communication Visuelle.</p>
+                    <h3><?php echo $lang['courrier']; ?></h3>
+                    <p><?php echo $lang['texteCourrier']; ?></p>
 
                     <div class="xl-col-12">
                         <div id="slides">

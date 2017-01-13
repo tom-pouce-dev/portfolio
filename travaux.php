@@ -38,8 +38,8 @@ require_once 'lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamical
                                 <img src="img/portfolio/cogedim.jpg" alt="cogedim téléphone" id="vignette">
                             </div>
                             <div class="realisation-info">
-                                <h4>APPLICATION<br>COGEDIM</h4>
-                                <span class="button">Voir</span>
+                                <h4><?php echo $lang['cogedim']; ?></h4>
+                                <span class="button"><?php echo $lang['voir']; ?></span>
                             </div>
                         </div>
                     </a>
@@ -53,8 +53,8 @@ require_once 'lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamical
                                 <img src="img/portfolio/courrier.jpg" alt="cogedim téléphone" id="vignette">
                             </div>
                             <div class="realisation-info">
-                                <h4>COURRIER INTERNATIONAL<br>JEUNESSE</h4>
-                                <span class="button">Voir</span>
+                                <h4><?php echo $lang['courrier']; ?></h4>
+                                <span class="button"><?php echo $lang['voir']; ?></span>
                             </div>
                         </div>
                     </a>
@@ -68,8 +68,8 @@ require_once 'lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamical
                                 <img src="img/portfolio/nosywise.jpg" alt="cogedim téléphone" id="vignette">
                             </div>
                             <div class="realisation-info">
-                                <h4>AGENCE<br>NOSYWISE</h4>
-                                <span class="button">Voir</span>
+                                <h4><?php echo $lang['nosywise']; ?></h4>
+                                <span class="button"><?php echo $lang['voir']; ?></span>
                             </div>
                         </div>
                     </a>
@@ -83,8 +83,8 @@ require_once 'lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamical
                                 <img src="img/portfolio/petitpont.jpg" alt="cogedim téléphone" id="vignette">
                             </div>
                             <div class="realisation-info">
-                                <h4>APPLICATION<br>PETIT PONT</h4>
-                                <span class="button">Voir</span>
+                                <h4><?php echo $lang['petitpont']; ?></h4>
+                                <span class="button"><?php echo $lang['voir']; ?></span>
                             </div>
                         </div>
                     </a>
@@ -98,8 +98,8 @@ require_once 'lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamical
                                 <img src="img/portfolio/adidas.jpg" alt="cogedim téléphone" id="vignette">
                             </div>
                             <div class="realisation-info">
-                                <h4>LIVRET<br>ADIDAS</h4>
-                                <span class="button">Voir</span>
+                                <h4><?php echo $lang['adidas']; ?></h4>
+                                <span class="button"><?php echo $lang['voir']; ?></span>
                             </div>
                         </div>
                     </a>
@@ -113,8 +113,8 @@ require_once 'lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamical
                                 <img src="img/portfolio/animaux.jpg" alt="cogedim téléphone" id="vignette">
                             </div>
                             <div class="realisation-info">
-                                <h4>LES ANIMAUX<br>EN PAGES</h4>
-                                <span class="button">Voir</span>
+                                <h4><?php echo $lang['animaux']; ?></h4>
+                                <span class="button"><?php echo $lang['voir']; ?></span>
                             </div>
                         </div>
                     </a>
@@ -128,8 +128,8 @@ require_once 'lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamical
                                 <img src="img/portfolio/gopro.jpg" alt="cogedim téléphone" id="vignette">
                             </div>
                             <div class="realisation-info">
-                                <h4>GOPRO</h4>
-                                <span class="button">Voir</span>
+                                <h4><?php echo $lang['gopro']; ?></h4>
+                                <span class="button"><?php echo $lang['voir']; ?></span>
                             </div>
                         </div>
                     </a>

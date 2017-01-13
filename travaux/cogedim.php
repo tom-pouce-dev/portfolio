@@ -1,3 +1,13 @@
+ <?php
+session_start();
+if(isset($_GET['lang']))
+  $_SESSION['lang'] = $_GET['lang']; //GET value from chosen lang
+
+if(!isset($_SESSION['lang']))
+  $_SESSION['lang'] = 'fr'; //default case
+
+require_once '../lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamically
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -20,8 +30,8 @@
         <main>
         <section class="container gutters fond">
             <div class="xl-col-12">
-               <h3>Cogedim</h3>
-                <p>Refonte graphique de la home pour l'application Cogedim.</p>
+               <h3><?php echo $lang['cogedim']; ?></h3>
+                <p><?php echo $lang['texteCogedim']; ?></p>
             </div>
             <div class="xl-col-12">
                 <img src="../img/cogedim/tablette.png" alt="tablette">

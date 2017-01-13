@@ -1,3 +1,13 @@
+ <?php
+session_start();
+if(isset($_GET['lang']))
+  $_SESSION['lang'] = $_GET['lang']; //GET value from chosen lang
+
+if(!isset($_SESSION['lang']))
+  $_SESSION['lang'] = 'fr'; //default case
+
+require_once '../lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamically
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -20,8 +30,8 @@
         <main>
         <section class="container gutters fond">
             <div class="xl-col-12">
-                <h3>GoPro</h3>
-                <p>Suite à la réalisation d'une étude marketing, il nous a été demandé de proposer un axe de communication pour une campagne GoPro. </p>
+                <h3><?php echo $lang['gopro']; ?></h3>
+                <p><?php echo $lang['texteGoPro']; ?></p>
                 <img src="../img/gopro/mag1.jpg" alt="intérieur magazine">
             </div>
             <div class="xl-col-6 l-col-6 m-col-6 s-col-12"><img src="../img/gopro/parking.jpg" alt="couverture"></div>

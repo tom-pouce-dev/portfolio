@@ -204,13 +204,18 @@ ul {
         color: white; }
     .navbar .navbarElements .navbarFlags {
       margin-bottom: 20px; }
-      .navbar .navbarElements .navbarFlags .flag {
-        display: inline-block;
-        padding: 5px 13px;
+      .navbar .navbarElements .navbarFlags li {
         background-color: #e8e8e8;
-        margin-right: 5px; }
-        .navbar .navbarElements .navbarFlags .flag a {
-          padding: 0px; }
+        text-decoration: none;
+        width: 48%;
+        display: inline-block; }
+        .navbar .navbarElements .navbarFlags li a {
+          color: #333333; }
+          .navbar .navbarElements .navbarFlags li a:hover {
+            color: white; }
+        .navbar .navbarElements .navbarFlags li:hover {
+          background-color: #24445c;
+          color: white; }
     .navbar .navbarElements .resume .resume-fr {
       border: 2px solid #67d6bd;
       margin-bottom: 20px; }

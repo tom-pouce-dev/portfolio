@@ -7,13 +7,23 @@
     <div class="navbarElements" id="navbarElements">
         <ul class="navbarListe">
             <!--            <li><a href="default.asp" class="navbarLinks">Accueil</a></li>-->
-            <li><a href="../travaux.php" class="navbarLinks">Travaux</a></li>
-            <li><a href="../contact.php" class="navbarLinks">Contact</a></li>
+            <li><a href="../travaux.php" class="navbarLinks"><?php echo $lang['work']; ?></a></li>
+            <li><a href="../contact.php" class="navbarLinks"><?php echo $lang['contact']; ?></a></li>
             <li><a href="../Book-Thomas-Werkmeister-2016.pdf" target="_blank" class="navbarLinks">Book</a></li>
         </ul>
+                <ul class="navbarFlags">
+            <li class="flag" id="fr">
+                <a href="?lang=fr" value="fr">fr</a></li>
+<!--
+            <li class="flag" id="en">
+                <a href="?lang=en" value="en">en</a></li>
+-->
+            <li class="flag" id="de">
+                <a href="?lang=de" value="de">de</a></li>
+        </ul>
         <ul class="resume">
-            <li><a href="../CV-Thomas-Werkmeister.pdf" target="_blank" class="resume-fr">mon CV</a></li>
-            <li><a href="../lebensaulfthomaswerkmeister.pdf" target="_blank" class="resume-de">Lebenslauf</a></li>
+            <li class="resume-fr"><a href="../CV-Thomas-Werkmeister.pdf" target="_blank">mon CV</a></li>
+            <li class="resume-de"><a href="../lebensaulfthomaswerkmeister.pdf" target="_blank">Lebenslauf</a></li>
         </ul>
     </div>
 </nav>

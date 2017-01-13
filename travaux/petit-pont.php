@@ -1,3 +1,13 @@
+ <?php
+session_start();
+if(isset($_GET['lang']))
+  $_SESSION['lang'] = $_GET['lang']; //GET value from chosen lang
+
+if(!isset($_SESSION['lang']))
+  $_SESSION['lang'] = 'fr'; //default case
+
+require_once '../lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamically
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -20,10 +30,10 @@
         <main>
             <section class="container gutters fond">
                 <div class="xl-col-12">
-                    <h3>Petit Pont</h3>
-                    <p>Dans le cadre de la compétition de juin organisée par l’IESA, réalisation du logo et de la charte graphique de l'application ainsi que l'intégration de la maquette.</p>
+                    <h3><?php echo $lang['titrePetitPont']; ?></h3>
+                    <p><?php echo $lang['textePetitPont']; ?></p>
                     <p>
-                        <a href="../petit-pont/index.php" class="button" target='_blank'>Voir le site</a></p>
+                        <a href="../petit-pont/index.php" class="button" target='_blank'><?php echo $lang['linkPetitPont']; ?></a></p>
                 </div>
                 <!--fin section-->
             </section>
