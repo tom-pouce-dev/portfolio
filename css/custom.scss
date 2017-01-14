@@ -556,7 +556,9 @@ img {
 .wrapper-info {
     margin: auto;
     position: relative;
-    top: 40VH;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     .info {
         border: 2px solid #FFF;
     }
@@ -699,7 +701,15 @@ input[type="email"],
 
 @media only screen and (max-width: 640px) {
     .wrapper-info {
-        top: 25VH;
+        //        top: 25VH;
+        .info {
+            border: none;
+        }
+    }
+    .wrapper-form {
+        .form {
+            border: none;
+        }
     }
     main {
         padding-left: 0px;

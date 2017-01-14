@@ -13,13 +13,13 @@
         </ul>
                 <ul class="navbarFlags">
             <li class="flag" id="fr">
-                <a href="?lang=fr" value="fr">fr</a></li>
+                <a href="?lang=fr" value="fr">FR</a></li>
 <!--
             <li class="flag" id="en">
                 <a href="?lang=en" value="en">en</a></li>
 -->
             <li class="flag" id="de">
-                <a href="?lang=de" value="de">de</a></li>
+                <a href="?lang=de" value="de">DE</a></li>
         </ul>
         <ul class="resume">
             <li class="resume-fr"><a href="../CV-Thomas-Werkmeister.pdf" target="_blank">mon CV</a></li>
