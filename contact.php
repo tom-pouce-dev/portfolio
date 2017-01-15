@@ -1,4 +1,4 @@
- <?php
+<?php
 session_start();
 if(isset($_GET['lang']))
   $_SESSION['lang'] = $_GET['lang']; //GET value from chosen lang

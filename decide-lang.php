@@ -1,4 +1,4 @@
- <?php 
+<?php 
 
 if (!empty($_GET['lang'])) {
     $lang = $_GET['lang'];
@@ -24,6 +24,6 @@ if (!empty($_GET['lang'])) {
  $expire = 365*24*3600; 
  
 // //enregistrement du cookie au nom de lang
-// setcookie('lang', $lang, time() + $expire); 
+ setcookie('lang', $lang, time() + $expire); 
 
  

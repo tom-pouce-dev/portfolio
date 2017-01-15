@@ -1,4 +1,7 @@
-    <meta charset="UTF-8">
+   <?php 
+     session_start();
+?>
+     <meta charset="UTF-8">
     <title>Thomas Portfolio</title>
 
     <meta name="description" content="créer son propre framework">
