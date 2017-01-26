@@ -1,0 +1,278 @@
+// ******************************************************************************************************
+//
+// MUELLER
+// modular grid system
+//
+// _screen.scss
+//
+// ******************************************************************************************************
+// ------------------------------------------------------------------------------------------------------
+// IMPORTS & VARIABLES
+//@import "blueprint/reset";
+@import "partials/base";
+@import "partials/default";
+@import "partials/large";
+@import "partials/tablet-portrait";
+@import "partials/handheld";
+@import "partials/handheld-landscape";
+@import "compass";
+//@import "compass/typography/vertical_rhythm";
+//@import "compass/css3/border-radius";
+//@import "compass/utilities/general/clearfix";
+// ------------------------------------------------------------------------------------------------------
+
+/********** TYPO **********/
+
+@font-face {
+    font-family: 'Optima';
+    src: url('../fonts/Optima-Roman.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/roboto-bold-webfont.woff') format('woff'), url('../fonts/roboto-bold-webfont.ttf') format('truetype');
+}
+
+html {
+    font-size: 16px;
+}
+
+
+/********** VARIABLES **********/
+
+$color-black: rgb(0,
+25,
+50);
+$color-bleu: rgb(0,
+175,
+220);
+$color-rouge: rgb(235,
+20,
+20);
+$color-vert: rgb(0,
+170,
+90);
+$typo-regular: 'Optima',
+Helvetica,
+Arial,
+sans-serif;
+$typo-bold: 'Roboto Bold',
+Helvetica,
+Arial,
+sans-serif;
+p {
+    font-size: 6rem;
+    line-height: 130%;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
+    &:hover {
+        color: $color-bleu;
+    }
+}
+
+img {
+    margin-bottom: 100px;
+}
+
+.fix {
+    position: fixed !important;
+//    bottom: 0VH;
+//    z-index: 1;
+}
+
+.cannavo {
+//    position: fixed;
+//    overflow: scroll;
+    .cannavo-content {
+        position: relative;
+        padding: 50px 75px;
+        .cannavo-p {
+            color: $color-black;
+            font-family: $typo-regular;
+            p {
+                margin-top: 0;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    .cannavo-img {
+        position: fixed;
+        right: 2VW;
+        bottom: 1.5VW;
+        z-index: 1000;
+        .cannavo-logo {
+             margin-bottom: 0 !important;
+            height: 200px;
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 1s;
+            -moz-transition-property: -moz-transform;
+            -moz-transition-duration: 1s;
+            transition-property: transform;
+            transition-duration: 1s;
+            &:hover {
+                -webkit-animation-name: rotate;
+                -webkit-animation-duration: 2s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: rotate;
+                -moz-animation-duration: 2s;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                animation-name: rotate;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @-webkit-keyframes rotate {
+                from {
+                    -webkit-transform: rotate(0deg);
+                }
+                to {
+                    -webkit-transform: rotate(360deg);
+                }
+            }
+            @-moz-keyframes rotate {
+                from {
+                    -moz-transform: rotate(0deg);
+                }
+                to {
+                    -moz-transform: rotate(360deg);
+                }
+            }
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    .cannavo-background {
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 100;
+        top: 110VH;
+        .cannavo-fond {}
+    }
+}
+
+
+/* ----------------------------- HOME BLOC ----------------------------*/
+
+body {
+    font-family: $font-family;
+    font-weight: normal;
+    color: $text-color;
+    background: #fff;
+    margin: 0;
+    padding: 0px 0px 0px 0px !important;
+}
+
+
+/*---------------écrans inférieurs à 1366px de large------------------*/
+
+@media only screen and (max-width: 1200px) {
+      .cannavo-content {
+        padding: 2rem 2rem;
+        .cannavo-p {
+            width: 95VW;
+            p {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+
+/*---------------écrans inférieurs à 853px de large------------------*/
+
+@media only screen and (max-width: 853px) {
+    .cannavo-content {
+        padding: 2rem 2rem;
+        .cannavo-p {
+            width: 95VW;
+            p {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+
+/* ----------------------------- MEDIA QUERIS 640 ----------------------------*/
+
+@media only screen and (max-width: 640px) {
+    .cannavo-content {
+        padding: 1rem 1rem !important;
+        .cannavo-p {
+            width: 95VW;
+            p {
+                font-size: 3rem;
+            }
+        }
+    }
+    .cannavo-logo {
+        margin-bottom: 0 !important;
+        height: 150px !important;
+        -webkit-transition-property: -webkit-transform;
+        -webkit-transition-duration: 0s;
+        -moz-transition-property: -moz-transform;
+        -moz-transition-duration: 0s;
+        transition-property: transform;
+        transition-duration: 0s;
+        &:hover {
+            -webkit-animation-name: rotate;
+            -webkit-animation-duration: 0s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-name: rotate;
+            -moz-animation-duration: 0s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: linear;
+            animation-name: rotate;
+            animation-duration: 0s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @-webkit-keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(0deg);
+            }
+        }
+        @-moz-keyframes rotate {
+            from {
+                -moz-transform: rotate(0deg);
+            }
+            to {
+                -moz-transform: rotate(0deg);
+            }
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+.cannavo-background {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    top: 150VH;
+    .cannavo-fond {}
+}
