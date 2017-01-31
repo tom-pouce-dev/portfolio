@@ -23,7 +23,7 @@
         </ul>
         <ul class="resume">
             <li class="resume-fr"><a href="../CV-Thomas-Werkmeister.pdf" target="_blank">mon CV</a></li>
-            <li class="resume-de"><a href="../lebensaulfthomaswerkmeister.pdf" target="_blank">Lebenslauf</a></li>
+            <li class="resume-de"><a href="../Lebensaulf-Thomas-Werkmeister.pdf" target="_blank">Lebenslauf</a></li>
         </ul>
     </div>
 </nav>

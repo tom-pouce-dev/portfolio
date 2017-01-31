@@ -7,7 +7,7 @@ $lang = array(
 'cv' => 'Lebenslauf',
 
 //index    
-'title' => 'Wilkommen',
+'title' => 'Willkommen',
 
 //contact
 'write' => 'Schreiben Sie mir',

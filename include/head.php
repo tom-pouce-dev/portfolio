@@ -1,7 +1,4 @@
-   <?php 
-     session_start();
-?>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Thomas Portfolio</title>
 
     <meta name="description" content="créer son propre framework">
@@ -13,4 +10,4 @@
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
     <meta name="viewport" content="width=device-width">
-      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
