@@ -181,7 +181,9 @@ a {
       background: url(../data/next.png);
       font-size: 0;
       width: 48px;
-      height: 94px; }
+      height: 94px;
+      right: 0px;
+      position: fixed; }
 
 .wrapper-table {
   background-color: #17244c;

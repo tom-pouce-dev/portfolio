@@ -8,40 +8,46 @@ if(!isset($_SESSION['lang']))
 
 require_once '../lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamically
 ?>
-<!DOCTYPE html>
-<html lang="fr">
+    <!DOCTYPE html>
+    <html lang="fr">
 
-<head>
-	<title>Thomas portfolio</title>
-	<?php 
+    <head>
+        <title>Thomas portfolio</title>
+        <?php 
     	include('../include/headwork.php');
     ?>
-</head>
+    </head>
 
-<body class="wrapper1">
+    <body class="wrapper1">
 
-    <!--Header-->
-    <?php 
+        <!--Header-->
+        <?php 
 		include('../include/headerwork.php');
 	?>
-        <!-- Fin Header-->
+            <!-- Fin Header-->
 
-        <!--Div infos-->
-        <main>
-        <section class="container gutters fond">
-            <div class="xl-col-12">
-               <h3><?php echo $lang['cogedim']; ?></h3>
-                <p><?php echo $lang['texteCogedim']; ?></p>
-            </div>
-            <div class="xl-col-12">
-                <img src="../img/cogedim/tablette.png" alt="tablette">
-            </div>
-            <!--fin section-->
-        </section>
-        </main>
-        <!-- footer -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="../js/custom.js"></script>
-</body>
+            <!--Div infos-->
+            <main>
+                <div id="wrapper-background-cogedim" class="wrapper-background-cogedim">
+                </div>
+                <div id="wrapper-content">
+                    <section class="container gutters fond">
+                        <div class="xl-col-12">
+                            <h3><?php echo $lang['cogedim']; ?></h3>
+                            <p>
+                                <?php echo $lang['texteCogedim']; ?>
+                            </p>
+                        </div>
+                        <div class="xl-col-12">
+                            <img src="../img/cogedim/tablette.png" alt="tablette">
+                        </div>
+                        <!--fin section-->
+                    </section>
+                </div>
+            </main>
+            <!-- footer -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="../js/custom.js"></script>
+    </body>
 
-</html>
+    </html>

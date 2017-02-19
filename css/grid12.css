@@ -37,7 +37,7 @@ html {
 }
 
 .container { /*permet de centrer le contenu automatiquement avec une taille maximal de 960px*/
-	max-width: 960px;
+	max-width: 980px;
 	margin: auto;
 } /*pour un one-page avec un contenu centrer, il suffit de mettre le .container dans le .wrapper*/
 
@@ -50,6 +50,12 @@ p, a, span, li {
 	word-wrap: break-word; /*compatible depuis ie (5.5)*/
 	hyphens: auto;
 	-moz-hyphens: auto;
+}
+
+.container {
+	padding-left: 5px;
+    padding-right: 5px;
+    
 }
 
 .gutters [class*=xl-col-] {

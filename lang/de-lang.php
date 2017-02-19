@@ -27,7 +27,18 @@ $lang = array(
 'adidas' => 'Adidas Broschüre',
 'animaux' => 'Tiere zum Anschauen',
 'gopro' => 'GoPro',
+'acer' => 'Acer',
+'blindate' => 'Blindate',
+'fablab' => 'Fablab <br> de Meaux',
 'voir' => 'Sehen',
+    
+//filtre
+'select' => 'Wählen eine Kategorie',
+'web' => 'Web',
+'print' => 'Druck',
+'identite' => 'Marktauftritt ',
+'gestion' => 'Projektmanagement',
+'annul' => 'Annullieren ',
     
 //cogedim
 'texteCogedim' => 'Neuentwurf des Designs der Applikation.',
@@ -38,6 +49,14 @@ $lang = array(
 //nosywise
 'titreNosywise' => 'Nosywise',
 'texteNosywise' => 'Entwicklung des Logos und des Grafik-Styleguide der fiktiven Agentur Nosywise.',
+    
+//blindate
+'titreBlindate' => 'Blindate',
+'texteBlindate' => 'Entwicklung des Layout die Website',
+    
+//acer
+'titreAcer' => 'Acer renew',
+'texteAcer' => 'Dans le cadre de la compétition de novembre organisée par l’IESA, réalisation du logo et de la charte graphique de l’agence fictive Nosywise.',
     
 //petitpont
 'titrePetitPont' => 'Petit Pont',

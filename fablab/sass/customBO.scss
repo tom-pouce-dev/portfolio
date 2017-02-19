@@ -1,0 +1,335 @@
+/**************************/
+/********** TYPO **********/
+/**************************/
+
+@font-face {
+    font-family: 'Karla Bold';
+    src: url('../fonts/karla-bold-webfont.woff') format('woff'),
+         url('../fonts/karla-bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Karla Italic';
+    src: url('../fonts/karla-italic-webfont.woff') format('woff'),
+         url('../fonts/karla-italic-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Karla Regular';
+    src: url('../fonts/karla-regular-webfont.woff') format('woff'),
+         url('../fonts/karla-regular-webfont.ttf') format('truetype');
+}
+
+/********************************/
+/********** VARIABLES **********/
+/********************************/
+
+$typo-regular: 'Karla Regular', Helvetica, Arial, sans-serif;
+$typo-bold: 'Karla Bold', Helvetica, Arial, sans-serif;
+$typo-italic: 'Karla Italic', Helvetica, Arial, sans-serif;
+
+$base-font-size: 17px;
+$l-font-size: 1.3rem;
+$m-font-size: 1.1rem;
+$s-font-size: 1rem;
+
+/***************************/
+/********** RESET **********/
+/***************************/
+
+input, textarea, button {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/********************************/
+/********** GENERIQUES **********/
+/********************************/
+
+html {
+	font-size: $base-font-size;
+	font-family: $typo-regular;
+	background: #E9E9E9;
+}
+
+h1 {
+	font-family: $typo-regular;
+	font-size: $l-font-size;
+}
+
+h2 {
+	font-family: $typo-bold;
+	font-size: $m-font-size;
+}
+
+h3 {
+	font-family: $typo-bold;
+	font-size: $s-font-size;
+}
+
+.alert {
+	color: #E34539;
+}
+
+.alert-success {
+	background: #86C553;
+	text-align: center;
+	padding: .7em;
+	color: #FFFFEC;
+}
+
+.alert-danger {
+	background: #E34539;
+	text-align: center;
+	padding: .7em;
+	color: #FFFFEC;
+}
+
+/***************************/
+/********** LOGIN **********/
+/***************************/
+
+.login {
+	background: #19B89D;
+	text-align: center;
+	main {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		section {
+			&:nth-of-type(2) {
+				margin-top: 1em;
+				.row {
+					div {
+						background: #FFFFEC;
+						p{
+							margin: 2em auto;
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	input {
+		font-family: $typo-italic;
+		margin: .5em auto;
+		width: 80%;
+		background: #D2D2D2;
+		padding: .6em;
+	}
+	input[type="submit"] {
+		width: initial;
+		font-family: $typo-regular;
+		background: #A5D664;
+		margin-bottom: 2em;
+		color: #FFFFEC;
+		padding: .6em 2em;
+		&:hover,
+		&:focus {
+			background: #19B89D;
+		}
+	}
+}
+
+/****************************/
+/********** HEADER **********/
+/****************************/
+
+.menu-h {
+	z-index: 1000;
+	position: fixed;
+	background: #86C553;
+	height: 100px;
+	.logo {
+		margin-left: 1em;
+		margin-top: 1em;
+		+ div {
+			height: 100px;
+			display: table;
+			float: right;
+			margin-right: 1em;
+			h1 {
+				display: table-cell;
+				vertical-align: middle;
+				color: #FFFFFF;
+				text-align: right;
+				span {
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}
+
+.menu-v {
+	position: fixed;
+	top: 100px;
+	background: #2C4452;
+}
+
+nav {
+	ul {
+		li {
+			&.active {
+				a {
+					background: #86C553 !important;
+				}
+			}
+			&:hover,
+			&:focus {
+				a {
+					background: #19B89D;
+				}
+			}
+			a {
+				text-decoration: none;
+				color: #FBFFF4;
+				display: block;
+				margin: 1em auto;
+				padding: .6em;
+				&:focus,
+				&:hover {
+					background: #19B89D;
+				}
+			}
+		}
+	}
+}
+
+/*****************************/
+/********** CONTENT **********/
+/*****************************/
+
+main {
+	position: absolute;
+	top: 100px;
+	margin-top: 1em;
+	h1 {
+		margin-bottom: 1em;
+		border-bottom: 1px solid #2C4452;
+		padding-bottom: .4em;
+	}
+	h2 {
+		margin: 1em auto;
+		&:nth-of-type(1) {
+			margin-top: 0;
+		}
+	}
+	p {
+		margin: 1em auto;
+	}
+	button[type="submit"] {
+		font-family: $typo-regular;
+		background: #A5D664;
+		margin-bottom: 2em;
+		color: #FFFFEC;
+		padding: .6em 2em;
+		&:hover,
+		&:focus {
+			background: #19B89D;
+		}
+		&.del {
+			background-color: #E45454;
+			color: #FFFFEC;
+			&:hover,
+			&:focus {
+				background: #E7311B;
+			}
+		}
+	}
+}
+
+select {
+	padding: .7em;
+	border: none;
+	background: #D2D2D2;
+	font-weight: 900;
+}
+
+.edit {
+	text-decoration: none;
+	padding: 10px;
+	background-color: #A5D664;
+	margin-bottom: 20px;
+	color: #FFFFEC;
+	&:hover,
+	&:focus {
+		background: #19B89D;
+	}
+}
+
+.delete {
+	text-decoration: none;
+	padding: 10px;
+	background-color: #E45454;
+	margin-bottom: 20px;
+	color: #FFFFEC;
+	&:hover,
+	&:focus {
+		background: #E7311B;
+	}
+}
+
+table {
+	margin-top: 1.4em;
+	width: 100%;
+	th, td {
+		padding: 15px 30px 15px 0;
+	}
+	th {
+		font-family: $typo-bold;
+		text-align: left;
+	}
+	tr {
+		border-bottom: 1px solid #2C4452;
+		&:nth-of-type(2n+1) {
+			background: #DDDDDD;
+		}
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: #2C2C2C;
+	}
+}
+
+textarea, input {
+	background: #D2D2D2;
+	width: 80%;
+	max-width: 80%;
+	padding: .7em;
+}
+
+textarea {
+	min-height: 150px;
+}
+
+.imgBand {
+	margin-bottom: 2em;
+}
+
+.btn {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+input[type="checkbox"] {
+	margin: .5em auto;
+}
+
+.center {
+	text-align: center;
+}
+
+.marg-b {
+	margin: 0 auto 1em;
+}

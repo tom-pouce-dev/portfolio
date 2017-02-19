@@ -8,41 +8,47 @@ if(!isset($_SESSION['lang']))
 
 require_once '../lang/' . $_SESSION['lang'] . '-lang.php'; //include file dinamically
 ?>
-<!DOCTYPE html>
-<html lang="fr">
+    <!DOCTYPE html>
+    <html lang="fr">
 
-<head>
-	<title>Thomas portfolio</title>
-	<?php 
+    <head>
+        <title>Thomas portfolio</title>
+        <?php 
     	include('../include/headwork.php');
     ?>
-</head>
+    </head>
 
-<body class="wrapper1">
+    <body class="wrapper1">
 
-    <!--Header-->
-    <?php 
+        <!--Header-->
+        <?php 
 		include('../include/headerwork.php');
 	?>
-        <!-- Fin Header-->
+            <!-- Fin Header-->
 
-        <!--Div infos-->
-        <main>
-        <section class="container gutters fond">
-            <div class="xl-col-12">
-                <h3><?php echo $lang['gopro']; ?></h3>
-                <p><?php echo $lang['texteGoPro']; ?></p>
-                <img src="../img/gopro/mag1.jpg" alt="intérieur magazine">
-            </div>
-            <div class="xl-col-6 l-col-6 m-col-6 s-col-12"><img src="../img/gopro/parking.jpg" alt="couverture"></div>
-            <div class="xl-col-6 l-col-6 m-col-6 s-col-12"><img src="../img/gopro/gare.jpg" alt="gare"></div>
-            <div class="xl-col-12"><img src="../img/gopro/mag2.jpg" alt="interieur magazine"></div>
-            <!--fin section-->
-        </section>
-</main>
-        <!-- footer -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="../js/custom.js"></script>
-</body>
+            <!--Div infos-->
+            <main>
+                <div id="wrapper-background-gopro">
+                </div>
+                <div id="wrapper-content">
+                    <section class="container gutters fond">
+                        <div class="xl-col-12">
+                            <h3><?php echo $lang['gopro']; ?></h3>
+                            <p>
+                                <?php echo $lang['texteGoPro']; ?>
+                            </p>
+                            <img src="../img/gopro/mag1.jpg" alt="intérieur magazine">
+                        </div>
+                        <div class="xl-col-6 l-col-6 m-col-6 s-col-12"><img src="../img/gopro/parking.jpg" alt="couverture"></div>
+                        <div class="xl-col-6 l-col-6 m-col-6 s-col-12"><img src="../img/gopro/gare.jpg" alt="gare"></div>
+                        <div class="xl-col-12"><img src="../img/gopro/mag2.jpg" alt="interieur magazine"></div>
+                        <!--fin section-->
+                    </section>
+                </div>
+            </main>
+            <!-- footer -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="../js/custom.js"></script>
+    </body>
 
-</html>
+    </html>

@@ -27,10 +27,21 @@ $lang = array(
 'adidas' => 'Livret Adidas',
 'animaux' => 'Les animaux en pages',
 'gopro' => 'GoPro',
+'acer' => 'Acer',
+'blindate' => 'Blindate',
+'fablab' => 'Fablab <br> de Meaux',
 'voir' => 'Voir',
     
+//filtre
+'select' => 'Sélectionnez une catégorie',
+'web' => 'Web',
+'print' => 'Print',
+'identite' => 'Identité visuelle',
+'gestion' => 'Gestion de projet',
+'annul' => 'Annuler',
+    
 //cogedim
-'texteCogedim' => 'Refonte graphique de la home pour l\'application Cogedim.',
+'texteCogedim' => 'Refonte de la home de l\'application Cogedim.',
     
 //courrier international
 'texteCourrier' => 'Réalisation d\'une version jeune du journal Courrier International où j\'ai effectué un stage en tant que maquettiste. Ce projet a été élaboré dans le cadre de mon projet professionnel lors de ma seconde année de BTS Communication Visuelle.',
@@ -38,6 +49,16 @@ $lang = array(
 //nosywise
 'titreNosywise' => 'Nosywise',
 'texteNosywise' => 'Dans le cadre de la compétition de novembre organisée par l’IESA, réalisation du logo et de la charte graphique de l’agence fictive Nosywise.',
+    
+//blindate
+'titreBlindate' => 'Blindate',
+'texteBlindate' => 'Dans le cadre d\'une compétition interne en équipe à l\'IESA, avec pour client Happn et son application de rencontre, un dispositif en ligne a été lancé pour mettre en avant les traits de caractères de chacun.
+
+Je me suis occupé de la création de la maquette ainsi que du cahier des charges fonctionnel.',
+    
+//acer
+'titreAcer' => 'Acer renew',
+'texteAcer' => 'Dans le cadre de l\'oral, pour le titre de chef de projet multimédia, il nous a été demandé de répondre à un brief ayant pour thématique, la création d\'une plateforme web dédié à la vente de produit acer reconditionné. <br> En tant que chef de projet, les quatre livrables étaient, un cahier des charges fonctionnel et technique, un planning ainsi qu\'un budget.',
     
 //petitpont
 'titrePetitPont' => 'Petit Pont',

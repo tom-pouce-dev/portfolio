@@ -50,10 +50,12 @@
 
 .icon-chevron-right:before {
     content: "\e900";
+    color: #13C0D7;
 }
 
 .icon-chevron-left:before {
     content: "\e901";
+    color: #13C0D7;
 }
 
 @font-face {
@@ -94,7 +96,8 @@ html,
 p,
 a,
 input,
-textarea {
+textarea,
+li {
     font-family: "Din-Regular";
 }
 
@@ -157,11 +160,13 @@ html {
     height: 100%;
     font-size: $base-font-size;
     line-height: 24px;
-    background: #e7e7e7;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQImWNgwAXOnDnz/8yZM/8JCxIFAG/wDY3aUVs4AAAAAElFTkSuQmCC);
 }
 
 main {
-    padding-left: 200px;
+    margin-left: 200px;
+    height: auto;
+    position: relative;
 }
 
 a {
@@ -318,7 +323,45 @@ ul {
 }
 
 
-/* ----------------------------- FIN NAV ----------------------------*/
+/* ----------------------------- FIN NAV ---------------------------*/
+
+//
+//
+
+/*-----------------------------FILTRE-------------------------------*/
+
+.filtre-global {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px 0px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    .filtre {
+        margin-bottom: 15px;
+    }
+    .filtre-list {
+        justify-content: center;
+        li {
+            margin: 0px 10px;
+            padding: 8px 10px;
+            border: 2px solid #CBCBCB;
+            background: white;
+            min-width: 100px;
+            list-style: none;
+            display: inline-block;
+            color: #CBCBCB;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover {
+                //background-color: #13C0D7;
+                border-color: #13C0D7;
+                color: #13C0D7;
+            }
+        }
+    }
+}
+
+
+/* ----------------------------- FIN FILTRE ------------------------*/
 
 //
 //
@@ -330,7 +373,7 @@ ul {
     margin-top: 2rem;
     border: solid 1px #DBDBDB;
     .slidesjs-container {
-        //        height: auto !important;
+        height: auto !important;
         //        position: inherit;
         .slidesjs-control {
             //            height: 100% !important;
@@ -346,6 +389,28 @@ ul {
     .slidesjs-navigation {
         margin-top: 3px;
     }
+    .slidesjs-previous {
+        margin-right: 5px;
+        float: left;
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        z-index: 10;
+    }
+    .slidesjs-next {
+        margin-right: 5px;
+        float: left;
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        z-index: 10;
+    }
+}
+
+#slides2, #slides3, #slides4 {
+    margin-top: 2rem;
+    border: solid 1px #DBDBDB;
+    position: relative;
     .slidesjs-previous {
         margin-right: 5px;
         float: left;
@@ -481,7 +546,6 @@ ul {
     background: #FFF;
     padding-bottom: 2rem;
     padding-top: 1rem;
-    margin-top: 30px;
     margin-bottom: 30px;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
@@ -493,12 +557,84 @@ ul {
     padding-bottom: 2rem;
 }
 
+//[class^="test"]
+[id^=wrapper] {
+    width: 100%;
+}
+
+#wrapper-content {
+    width: 100%;
+    position: absolute;
+    top: 63%;
+}
+
+[id^=wrapper-background] {
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: -50;
+    border-bottom: 4px solid #17C0D7;
+}
+
+#wrapper-background-adidas {
+    background-image: url(../img/banniere/adi.jpg);
+    border-bottom-color: #71897A;
+}
+
+#wrapper-background-petitpont {
+    background-image: url(../img/banniere/petitpont.jpg);
+    border-bottom-color: #FFD905;
+}
+
+#wrapper-background-animaux {
+    background-image: url(../img/banniere/animaux.jpg);
+    border-bottom-color: #e48fa4;
+}
+
+#wrapper-background-cogedim {
+    background-image: url(../img/banniere/cogedim.jpg);
+    border-bottom-color: #572481;
+}
+
+#wrapper-background-courrier {
+    background-image: url(../img/banniere/courrier.jpg);
+    border-bottom-color: #f2ea92;
+}
+
+#wrapper-background-gopro {
+    background-image: url(../img/banniere/gopro.jpg);
+    border-bottom-color: #c62135;
+}
+
+#wrapper-background-nosywise {
+    background-image: url(../img/banniere/nosywise.jpg);
+    border-bottom-color: #003153;
+}
+
+#wrapper-background-acer {
+    background-image: url(../img/banniere/acer.jpg);
+    border-bottom-color: #3f9e46;
+}
+
+#wrapper-background-fablab {
+    background-image: url(../img/banniere/fablab.jpg);
+    border-bottom-color: #19b89c;
+    
+    
+}#wrapper-background-blindate {
+    background-image: url(../img/banniere/blindate.jpg);
+    border-bottom-color: #188AB2;
+}
+
 .realisation-link {
     margin-top: 2em;
     .realisation {
         width: 100%;
         height: 100%;
         position: relative;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
         .realisation-info {
             position: absolute;
             z-index: 0;
@@ -507,6 +643,7 @@ ul {
             background-color: #0A253E;
             opacity: 0;
             top: 0;
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
             h4 {
                 display: inline-block;
                 width: 100%;
@@ -527,7 +664,8 @@ ul {
                 }
             }
             &:hover {
-                opacity: 0.8;
+                opacity: 0.9;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
             }
         }
         img {
@@ -605,7 +743,7 @@ img {
             margin-bottom: 1em;
             input,
             textarea {
-                padding: 1em 3em;
+                padding: 1em 1em;
                 border: 1px solid white;
                 background: white;
             }
@@ -712,7 +850,7 @@ input[type="email"],
         }
     }
     main {
-        padding-left: 0px;
+        margin-left: 0px;
         .fond {
             margin-bottom: 0px;
             margin-top: 0px;
@@ -739,9 +877,9 @@ input[type="email"],
     }
     // NAVBAR HEADER
     .navbar {
-        overflow: scroll;
+        //overflow: scroll;
         transform: translateX(-100%);
-        width: 100%;
+        width: 70%;
         height: 100%;
         transition-property: all;
         transition-duration: $duration;
@@ -758,11 +896,7 @@ input[type="email"],
             }
         }
         .resume {
-            a {}
-            .resume-fr {
-                padding: 15px 0;
-            }
-            .resume-de {
+            a {
                 padding: 15px 0;
             }
         }
